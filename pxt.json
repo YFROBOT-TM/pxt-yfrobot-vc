@@ -1,0 +1,22 @@
+{
+    "name": "YFVC",
+    "version": "0.0.1",
+    "description": "Microbit makecode package for YFROBOT's RTC Real-time Module.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh-cn/YFVC-strings.json",
+        "_locales/zh-cn/YFVC-jsdoc-strings.json",
+        "_locales/zh-tw/YFVC-strings.json",
+        "_locales/zh-tw/YFVC-jsdoc-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "preferredEditor": "tsprj"
+}
