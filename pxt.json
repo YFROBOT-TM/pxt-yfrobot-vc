@@ -1,7 +1,7 @@
 {
     "name": "YFVC",
     "version": "0.0.1",
-    "description": "Microbit makecode package for YFROBOT's RTC Real-time Module.",
+    "description": "Microbit makecode package for YFROBOT's Offline speech recognition module.",
     "license": "MIT",
     "dependencies": {
         "core": "*"
