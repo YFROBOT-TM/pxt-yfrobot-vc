@@ -1,3 +1,5 @@
 {
-    "{id:category}YFVC": "RTC時鐘"
+    "YFVC.initSerial|block": "串口重定向到 TX %tx| RX %rx 波特率9600",
+    "YFVC.readData|block": "讀取語音辨識模組",
+    "{id:category}YFVC": "语音识别"
 }

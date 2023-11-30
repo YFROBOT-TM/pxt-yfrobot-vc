@@ -1,4 +1,4 @@
 {
-    "YFVC.initSerial": "串口重定向到 TX %tx| RX %rx 波特率9600",
-    "YFVC.readData": "读取语音辨识模块"
+    "YFVC.initSerial": "配置串口引脚 TX(不工作) RX 波特率9600",
+    "YFVC.readData": "读取语音辨识返回数据，十六进制"
 }
