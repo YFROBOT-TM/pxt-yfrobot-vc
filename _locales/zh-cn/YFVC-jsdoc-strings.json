@@ -1,4 +1,4 @@
 {
-    "YFVC.initSerial": "初始化串口重定向到 TX %tx| RX %rx 波特率 9600",
+    "YFVC.initSerial": "串口重定向到 TX %tx| RX %rx 波特率9600",
     "YFVC.readData": "读取语音辨识模块"
 }

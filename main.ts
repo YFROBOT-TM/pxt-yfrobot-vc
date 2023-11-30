@@ -15,14 +15,16 @@ namespace YFVC {
 
     /**
      * Init serial.
-     * @param tx the TX pin for YFVC (no work), eg: DigitalPin.P1 
-     * @param rx the RX pin for YFVC, eg: DigitalPin.P0
+     * @param tx the TX pin for YFVC (no work), eg: SerialPin.P1 
+     * @param rx the RX pin for YFVC, eg: SerialPin.P0
      */
     //% blockId="YFVC_create"  weight=100 blockGap=8
     //% block="Init serial redirect to TX %tx| RX %rx at baud rate 9600"
+    //% tx.fieldEditor="gridpicker" tx.fieldOptions.columns=3
+    //% rx.fieldEditor="gridpicker" rx.fieldOptions.columns=3
     //% inlineInputMode=inline
-    export function initSerial(tx: DigitalPin, rx: DigitalPin): void {
-        serial.redirect( tx, rx, BaudRate.BaudRate9600)
+    export function initSerial(tx: SerialPin, rx: SerialPin): void {
+        serial.redirect( tx, rx, BaudRate.BaudRate9600);
     }
 
     /**
@@ -32,12 +34,12 @@ namespace YFVC {
     //% block="get speech recognition module"
     //% inlineInputMode=inline
     export function readData(): number {
-        let list = 1;
-        let text_list: Buffer = null;
-        text_list = serial.readBuffer(5);
-        list = text_list[1]
-        if(list != 1){
-            return list;
+        let data = 1;
+        let data_list: Buffer = null;
+        data_list = serial.readBuffer(5);
+        data = data_list[1];
+        if(data != 1){
+            return data;
         } else 
             return 1;
     }
